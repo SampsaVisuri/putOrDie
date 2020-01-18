@@ -1,1 +1,1 @@
-# puttingGame
+# putOrDie
