@@ -1,0 +1,222 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    background: linear-gradient(#FF6C69, #EB770C) no-repeat;
+    padding-top: 100px;
+    padding-bottom: 100px;
+}
+
+h1 {
+    text-align: center;
+    font-weight: 900;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+p {
+    font-size: 18px;
+    font-weight: 900;
+}
+
+.whole-wrap {
+    margin: 0 auto 0 auto;
+    padding: 30px 30px;
+    font-family: 'Poppins', sans-serif;
+    background: #f3f0f0;
+    border-radius: 5%;
+    max-width: 800px;
+}
+
+.game-info-wrap {
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    grid-template-rows: auto;
+    margin: 0 auto;
+}
+
+.round {
+    border: 0.5px solid;
+    margin: 5px 0 5px 0;
+    h3 {
+        text-align: center;
+    }
+}
+.score {
+    border: 0.5px solid;
+    margin: 5px 0 5px 0;
+    h3 {
+        text-align: center;
+    }
+}
+.distance {
+    border: 0.5px solid;
+    margin: 5px 0 5px 0;
+    h3 {
+        text-align: center;
+    }
+}
+
+
+.results-grid-1 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+    div{
+        border: 1px solid;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+}
+
+.results-grid-2 {
+    display: grid;
+    grid-template-columns: repeat(10, 1fr);
+    grid-template-rows: 1fr 1fr;
+    div{
+        border: 1px solid;
+        padding: 20px 0 20px 0;
+        text-align: center;
+    }
+}
+
+.space {
+    margin-top: 50px;
+}
+
+
+button {
+    display: block;
+    padding: 25px 30px 25px 30px;
+    margin: auto;
+    background: linear-gradient(#643CEB, #8AAFFF);
+    color: #fff;
+    font-size: 20px;
+    font-weight: 900;
+    border-radius: 10%;
+    &:hover {
+        background: linear-gradient(#643CEB, #B1AFFF);
+    }
+}
+
+.answer {
+    display: inline;
+    .phone-button-grid {
+        display: grid;
+        grid-template-columns: repeat(6,1fr);
+        grid-template-rows: 1fr;
+        grid-gap: 10px;
+        margin-bottom: 30px;
+    }
+}
+
+#buttonUndo{
+    margin: 40px auto 50px auto;
+}
+
+
+@media screen and (max-width: 800px){
+    * {
+        margin: 0;
+        padding: 0;
+    }
+
+    .answer {
+        display: inline;
+        .phone-button-grid {
+            display: grid;
+            grid-template-columns: repeat(3,1fr);
+            grid-template-rows: repeat(2,1fr);
+            grid-gap: 10px;
+            margin-bottom: 30px;
+        }
+    
+    }
+    .whole-wrap {
+        margin: 0 10px 0 10px;
+        padding: 10px 10px;
+        font-family: 'Poppins', sans-serif;
+        background: #f3f0f0;
+        border-radius: 5%;
+
+    }
+
+    .game-info-wrap {
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        grid-template-rows: auto;
+    }
+    
+    body {
+        padding: 10px 0 10px 0;
+        background: linear-gradient(#FF6C69, #EB770C);
+        background-size: cover;
+        background-repeat: no-repeat;
+        padding: 20px 0 250px 0;
+        
+    }
+
+    .space {
+        display: none;
+    }
+
+    .results-grid-1 {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr 1fr;
+        div{
+            border: 1px solid;
+            padding: 0;
+            text-align: center;
+        }
+        margin-bottom: 10px;
+    }
+
+    .results-grid-2 {
+        display: grid;
+        grid-template-columns: repeat(10, 1fr);
+        grid-template-rows: 1fr 1fr;
+        div{
+            border: 1px solid;
+            padding: 0;
+            text-align: center;
+        }
+    }
+    .round {
+        border: 0.5px solid;
+        margin: 5px 0 5px 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    .score {
+        border: 0.5px solid;
+        margin: 5px 0 5px 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    .distance {
+        border: 0.5px solid;
+        margin: 5px 0 5px 0;
+        h3 {
+            text-align: center;
+        }
+    }
+    #buttonUndo {
+        margin: 20px auto 25px auto;
+
+    }
+    #score {
+        text-align: center;
+    }
+    #round {
+        text-align: center;
+    }
+    #distance {
+        text-align: center;
+    }
+}
